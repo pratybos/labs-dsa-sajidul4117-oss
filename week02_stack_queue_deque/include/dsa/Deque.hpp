@@ -1,13 +1,23 @@
+<<<<<<< HEAD
 // Deque<T> using a circular buffer with push/pop on both ends.
 #pragma once                                  // include guard
 #include <cstddef>                            // for std::size_t
 #include <stdexcept>                          // for std::out_of_range
+=======
+//
+// Created by marius on 1/26/26.
+//
+
+#pragma once
+#include <cstddef>
+>>>>>>> 1a8add819ac79b3efba7aa41f9c3cf5b73f204e7
 
 namespace dsa {
 
     template <class T>
     class Deque {
     public:
+<<<<<<< HEAD
         Deque()
             : data_(nullptr),                 // buffer not yet allocated
               capacity_(0),                   // buffer size
@@ -78,3 +88,23 @@ namespace dsa {
     };
 
 } // namespace dsa
+=======
+        Deque();
+
+        void push_front(const T& value);
+        void push_back(const T& value);
+        void pop_front();
+        void pop_back();
+
+        T& front();
+        T& back();
+
+        bool empty() const;
+        std::size_t size() const;
+
+    private:
+        // circular buffer fields
+    };
+
+}
+>>>>>>> 1a8add819ac79b3efba7aa41f9c3cf5b73f204e7

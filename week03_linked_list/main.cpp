@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // Simple demo program for Lab 3: shows SinglyLinkedList.
 #include <iostream>                           // for printing
 #include "dsa/SinglyLinkedList.hpp"           // our linked list
@@ -18,4 +19,12 @@ int main() {
     list.remove_first(2);                     // remove value 2
     std::cout << "contains 2? " << list.find(2) << "\n"; // 0 (false)
     return 0;                                 // done
+=======
+//
+// Created by marius on 1/26/26.
+//
+int main(int argc, char *argv[]) {
+
+    return 0;
+>>>>>>> 1a8add819ac79b3efba7aa41f9c3cf5b73f204e7
 }

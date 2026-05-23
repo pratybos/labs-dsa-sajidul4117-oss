@@ -68,7 +68,7 @@ TEST_CASE("insert shifts elements to the right") {
     a.push_back(20);
     a.push_back(30); // [10,20,30]
 
-    a.insert(1, 99); // [10,99,20,30]
+    a.insert(1, 99); // [10,99,20,30].
     CHECK(a.size() == 4);
     CHECK(a[0] == 10);
     CHECK(a[1] == 99);

@@ -1,14 +1,24 @@
+<<<<<<< HEAD
 // Stack<T> built on top of our DynamicArray. LIFO order.
 #pragma once                                  // include only once
 #include <cstddef>                            // for std::size_t
 #include <stdexcept>                          // for std::out_of_range
 #include "DynamicArray.hpp"                   // we reuse DynamicArray as the storage
+=======
+//
+// Created by marius on 1/26/26.
+//
+
+#pragma once
+#include <cstddef>
+>>>>>>> 1a8add819ac79b3efba7aa41f9c3cf5b73f204e7
 
 namespace dsa {
 
     template <class T>
     class Stack {
     public:
+<<<<<<< HEAD
         Stack() {}                            // nothing to initialize, DynamicArray default-constructs itself
 
         void push(const T& value) {           // put a new value on top of the stack
@@ -37,3 +47,20 @@ namespace dsa {
     };
 
 } // namespace dsa
+=======
+        Stack();
+
+        void push(const T& value);
+        void pop();
+        T& top();
+        const T& top() const;
+
+        bool empty() const;
+        std::size_t size() const;
+
+    private:
+        // student decides representation
+    };
+
+}
+>>>>>>> 1a8add819ac79b3efba7aa41f9c3cf5b73f204e7

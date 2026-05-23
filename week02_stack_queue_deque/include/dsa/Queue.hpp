@@ -1,14 +1,24 @@
+<<<<<<< HEAD
 // Queue<T> implemented using a circular buffer (FIFO).
 // head_ = index of front element; size_ = number of elements stored.
 #pragma once                                  // include only once
 #include <cstddef>                            // for std::size_t
 #include <stdexcept>                          // for std::out_of_range
+=======
+//
+// Created by marius on 1/26/26.
+//
+
+#pragma once
+#include <cstddef>
+>>>>>>> 1a8add819ac79b3efba7aa41f9c3cf5b73f204e7
 
 namespace dsa {
 
     template <class T>
     class Queue {
     public:
+<<<<<<< HEAD
         Queue()
             : data_(nullptr),                 // buffer not allocated yet
               capacity_(0),                   // buffer size is zero
@@ -68,3 +78,20 @@ namespace dsa {
     };
 
 } // namespace dsa
+=======
+        Queue();
+
+        void enqueue(const T& value);
+        void dequeue();
+        T& front();
+        const T& front() const;
+
+        bool empty() const;
+        std::size_t size() const;
+
+    private:
+        // circular buffer fields
+    };
+
+}
+>>>>>>> 1a8add819ac79b3efba7aa41f9c3cf5b73f204e7

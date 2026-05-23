@@ -1,15 +1,26 @@
+<<<<<<< HEAD
 // SinglyLinkedList<T>
 // Node-based linked list using raw pointers and manual memory management.
 // We keep a head_ pointer (and size_) so most operations are easy.
 #pragma once                                  // include only once per translation unit
 #include <cstddef>                            // for std::size_t
 #include <stdexcept>                          // for std::out_of_range
+=======
+//
+// Created by marius on 1/27/26.
+//
+
+#pragma once
+#include <cstddef>
+#include <stdexcept>
+>>>>>>> 1a8add819ac79b3efba7aa41f9c3cf5b73f204e7
 
 namespace dsa {
 
     template <class T>
     class SinglyLinkedList {
     private:
+<<<<<<< HEAD
         struct Node {                         // single list node
             T value;                          // value stored in the node
             Node* next;                       // pointer to the next node (nullptr if last)
@@ -140,6 +151,42 @@ namespace dsa {
     private:
         Node* head_;                          // pointer to first node (nullptr if empty)
         std::size_t size_;                    // number of nodes in the list
+=======
+        struct Node {
+            T value;
+            Node* next;
+            Node(const T& v, Node* n = nullptr) : value(v), next(n) {}
+        };
+
+    public:
+        SinglyLinkedList();
+        ~SinglyLinkedList();
+
+        // Rule of 3/5: LATER (not implementing just copying now)
+        SinglyLinkedList(const SinglyLinkedList&) = delete;
+        SinglyLinkedList& operator=(const SinglyLinkedList&) = delete;
+
+        bool empty() const;
+        std::size_t size() const;
+
+        T& front();
+        const T& front() const;
+
+        T& back();               // O(n) for singly list (unless you store tail)
+        const T& back() const;
+
+        void push_front(const T& value);
+        void push_back(const T& value);
+
+        void pop_front();        // throws if empty
+        void pop_back();         // throws if empty
+
+        void clear();
+
+    private:
+        Node* head_;
+        std::size_t size_;
+>>>>>>> 1a8add819ac79b3efba7aa41f9c3cf5b73f204e7
     };
 
 } // namespace dsa
