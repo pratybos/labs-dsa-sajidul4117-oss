@@ -1,0 +1,11 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/week01.dir/main.cpp.o"
+  "CMakeFiles/week01.dir/main.cpp.o.d"
+  "week01"
+  "week01.pdb"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang CXX)
+  include(CMakeFiles/week01.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

@@ -1,0 +1,1 @@
+/usr/bin/c++  -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/week03_tests.dir/tests.cpp.o -o week03_tests
