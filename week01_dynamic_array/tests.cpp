@@ -75,7 +75,7 @@ TEST_CASE("insert shifts elements to the right") {
     CHECK(a[2] == 20);
     CHECK(a[3] == 30);
 }
-
+// inserting at index==size should be like push_back
 TEST_CASE("insert at end behaves like push_back") {
     dsa::DynamicArray<int> a;
     a.push_back(1);
