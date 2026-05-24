@@ -29,7 +29,7 @@ TEST_CASE("heap push/top/pop produce descending order") {
     while (!h.empty()) {
         int cur = h.top();
         h.pop();
-        CHECK(cur <= prev);                   // monotonically non-increasing
+        CHECK(cur <= prev);                   // monotonically non-increasing.
         prev = cur;
     }
 }
