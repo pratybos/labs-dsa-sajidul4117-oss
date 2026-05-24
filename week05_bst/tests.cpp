@@ -4,7 +4,7 @@
 #include "dsa/BST.hpp"
 #include <stdexcept>
 
-// Helper: build the sample tree used in many tests.
+// Helper
 //          50
 //         /  \
 //       30    70
