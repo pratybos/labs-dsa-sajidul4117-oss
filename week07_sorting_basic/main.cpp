@@ -14,7 +14,7 @@ int main() {
     int input[] = {5, 2, 9, 1, 7, 3, 8, 4, 6}; // shared input
     constexpr std::size_t N = sizeof(input) / sizeof(input[0]);
 
-    int a[N];                                 // working copy for bubble sort
+    int a[N];                                 // working copy fo bubble sort
     for (std::size_t i = 0; i < N; ++i) a[i] = input[i];
     std::size_t bc = 0, bs = 0;               // counters for bubble sort
     dsa::bubble_sort(a, N, &bc, &bs);
