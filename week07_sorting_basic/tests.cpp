@@ -13,7 +13,7 @@ static bool is_sorted(const T* a, std::size_t n) {
 
 TEST_CASE("bubble_sort handles empty and single-element arrays") {
     int empty[1];                             // not used; just to have a pointer
-    dsa::bubble_sort<int>(empty, 0);          // must not crash
+    dsa::bubble_sort<int>(empty, 0);          // must not crash.
     int one[] = {42};
     dsa::bubble_sort(one, 1);
     CHECK(one[0] == 42);
