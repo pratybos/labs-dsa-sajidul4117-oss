@@ -1,4 +1,4 @@
-// Demo for Lab 6: build a small undirected graph and run BFS + DFS.
+// Demo for Lab 6: build a small undirected graph and run BFS + DFS
 #include <iostream>                           // for printing
 #include "dsa/Graph.hpp"                      // our Graph
 
