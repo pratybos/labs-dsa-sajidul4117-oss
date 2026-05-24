@@ -24,7 +24,7 @@ int main() {
     std::cout << "remove 50 (root, two children):  " << t.remove(50) << "\n";
     std::cout << "remove 999 (missing):            " << t.remove(999) << "\n";
 
-    t.inorder(buf);                           // sorted order after removals
+    t.inorder(buf);                           // sorted order removals
     std::cout << "inorder after removes: ";
     for (std::size_t i = 0; i < t.size(); ++i) std::cout << buf[i] << " ";
     std::cout << "\n";
