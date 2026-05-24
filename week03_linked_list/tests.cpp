@@ -74,7 +74,7 @@ TEST_CASE("pop on empty throws") {
     CHECK_THROWS_AS(list.front(), std::out_of_range);
     CHECK_THROWS_AS(list.back(), std::out_of_range);
 }
-//Hello Sajid
+
 TEST_CASE("clear removes everything") {
     dsa::SinglyLinkedList<int> list;
     for (int i = 0; i < 10; ++i) list.push_back(i);

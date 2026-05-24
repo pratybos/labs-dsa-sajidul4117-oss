@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 // Simple demo program for Lab 2: shows Stack, Queue, and Deque.
 #include <iostream>                           // for printing
 #include "dsa/Stack.hpp"                      // our Stack
@@ -19,12 +18,4 @@ int main() {
     std::cout << "deque front = " << d.front() << ", back = " << d.back() << "\n"; // 1 .. 3
 
     return 0;                                 // success
-=======
-//
-// Created by Sajid on 1/26/26.
-//
-int main(int argc, char *argv[]) {
-
-    return 0;
->>>>>>> 1a8add819ac79b3efba7aa41f9c3cf5b73f204e7
 }

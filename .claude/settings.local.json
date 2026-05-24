@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(./week07_sorting_basic/build/week07_tests)",
+      "Bash(./week10_hash_table/build/week10_tests)"
+    ]
+  }
+}

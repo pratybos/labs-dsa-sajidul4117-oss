@@ -4,7 +4,7 @@
 #include "dsa/BinaryTree.hpp"
 #include <stdexcept>
 
-// Helper: build the tree used in most tests
+// Helper: build the tree used in most tests.
 //      1
 //     / \
 //    2   3

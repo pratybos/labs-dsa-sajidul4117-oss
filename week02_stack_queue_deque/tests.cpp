@@ -159,7 +159,7 @@ TEST_CASE("Deque: circular wrap-around works (stress)") {
     }
     CHECK(d.front() == 109);
 
-    // Basic integri
+    // Basic integrity: size is consistent and we can pop everything
     std::size_t n = d.size();
     for (std::size_t i = 0; i < n; ++i) {
         d.pop_front();

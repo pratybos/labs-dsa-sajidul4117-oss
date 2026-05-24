@@ -17,7 +17,7 @@ int main() {
 
     int buf[16];                              // buffer for traversal results
     t.preorder(buf);                          // expected: 1 2 4 5 3
-    std::cout << "preorder:  ";               // label 1
+    std::cout << "preorder:  ";               // label
     for (std::size_t i = 0; i < t.size(); ++i) std::cout << buf[i] << " "; // print each
     std::cout << "\n";
 
