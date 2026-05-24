@@ -2,7 +2,7 @@
 // Heapsort guarantees O(n log n) in the worst case because:
 //  - build_heap is O(n)
 //  - each of the n-1 extract-max operations is O(log n)
-#include <iostream>                           // for printing
+#include <iostream>                           // for printing.
 #include "dsa/Heap.hpp"                       // our max-heap
 #include "dsa/Sorting.hpp"                    // our heapsort
 
