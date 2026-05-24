@@ -21,7 +21,7 @@ int main() {
     print(a, N, "bubble sorted:  ");
     std::cout << "  comparisons=" << bc << " swaps=" << bs << "\n";
 
-    int b[N];                                 // working copy for shell sort
+    int b[N];                                 // working copy for shell. sort
     for (std::size_t i = 0; i < N; ++i) b[i] = input[i];
     std::size_t sc = 0, sm = 0;               // counters for shell sort
     dsa::shell_sort(b, N, &sc, &sm);
