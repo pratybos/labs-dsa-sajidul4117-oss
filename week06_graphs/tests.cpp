@@ -4,7 +4,7 @@
 #include "dsa/Graph.hpp"
 #include <stdexcept>
 
-// Globals used to record the order in which a visitor was called.
+// Globals used to record the order .
 // Free functions are required because Graph stores a `void(*)(int)` callback.
 static int g_visited[64];
 static int g_visited_count = 0;
